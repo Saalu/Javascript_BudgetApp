@@ -1,0 +1,79 @@
+*{
+
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace
+}
+
+:root{
+    --red:#e74c3c;
+    --green: #2ecc71;
+    --blue:#03A9F4 ;
+    --dark:#333 ;
+    --yellow: #FFC107;
+    --shadow: 2px 2px 5px rgba(0,0,0,.5)
+}
+body{
+    background:#eee;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+form{
+    border: 2px solid var(--green);
+    width: 260px;
+    padding: 10px;
+    border-radius: 4px;
+}
+form label{
+    font-size: large;
+    font-weight: bold;
+    color: var(--dark)
+}
+form input {
+    width: 100%;
+    margin: 10px 0;
+    padding: .3rem 0;
+    font-size: 1.2rem;
+    padding-left: 5px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+
+}
+form .btn{
+    width: 50%;
+    font-size: 1rem;
+    text-align: center;
+    border:2px solid var(--green);
+    border-radius: 4px;
+    padding: .5rem;
+    text-transform: capitalize;
+    background: transparent;
+}
+
+form input focus{
+    border-color: #03A9F4;
+}
+
+.one form{
+
+}
+.one form .btn{
+    border: 2px solid var(--green);
+    color: var(--green);
+}
+.two form{
+    background: ;
+    border: 2px solid var(--red);
+    margin-top: 30px;
+}
+
+.two form .btn{
+    border: 2px solid var(--red);
+    color: var(--red);
+}
