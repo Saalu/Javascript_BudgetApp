@@ -13,14 +13,14 @@
         <!-- =================Form Section ==================== -->
     <section class="form-section">
        <div class="one">
-        <form action="#">
+        <form action="#" id="budget-form">
                 <label for="budget">Please Enter Your Budget</label>
             <input type="text" id="budget">
             <input type="submit" name="" value="Calculate" id="btn" class="btn">
         </form>
        </div>
        <div class="two">
-        <form action="#">
+        <form action="#" id="expense-form">
             <label for="budget">Please Enter Your Expense</label>
             <input type="text" id="expense-name">
             <label for="budget">Please Enter Expense Amount</label>
@@ -32,23 +32,26 @@
 
 
     <!-- =================Display Results==================== -->
-    <section class="result-section">
-        <div class="one">
+    <section class="result">
+        <div class="one list">
             <div class="list">
                 <h3>BUDGET</h3>
                 <li>icon</li>
-                <p>$ 0</p>
+                <p class="budget">$ 0</p>
             </div>
             <div class="list">
                 <h3>EXPENSES</h3>
                 <li>icon</li>
-                <p>$ 0</p>
+                <p class="expenses">$ 0</p>
             </div>
             <div class="list">
                 <h3>BALANCE</h3>
                 <li>icon</li>
-                <p>$ 0</p>
+                <p class="balance">$ 0</p>
             </div>
+        </div>
+        <div class="two">
+            <h2>Expense Title Expense Value</h2>
         </div>
     </section>
 
