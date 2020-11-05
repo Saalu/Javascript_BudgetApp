@@ -1,21 +1,27 @@
 *{
-
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: monospace
+    font-family: monospace;
 }
 
 :root{
-    --red:#e74c3c;
-    --green: #2ecc71;
-    --blue:#03A9F4 ;
+    --red:#b80c09;
+    /* --red:#e74d3c80; */
+    --green: #317b22;
+    --lightgreen: #2ecc707a;
+    --blue:#05668d ;
+    --lightblue:rgba(3, 168, 244, 0.445) ;
     --dark:#333 ;
     --yellow: #FFC107;
     --shadow: 2px 2px 5px rgba(0,0,0,.5)
 }
 body{
     background:rgba(238, 238, 238, 0.671);
+}
+
+ tr{
+    padding: 5rem;
 }
 
 .container{
@@ -64,24 +70,17 @@ form .btn:active{
 
 }
 
-form input focus{
-    border-color: #03A9F4;
-}
 
-.one form{
-
-}
-.one form .btn{
+.form-one form .btn{
     border: 2px solid var(--green);
     color: var(--green);
 }
-.two form{
-    background: ;
+.form-two form{
     border: 2px solid var(--red);
     margin-top: 30px;
 }
 
-.two form .btn{
+.form-two form .btn{
     border: 2px solid var(--red);
     color: var(--red);
 }
@@ -96,14 +95,28 @@ form input focus{
     margin-left: 10px;
 }
 
-.one .budget{
+.form-one .budget{
     color: var(--green);
 }
-.one .expenses{
+.form-one .expenses{
     color: var(--red);
 }
-.one .balance{
+.form-one .balance{
     color: var(--blue);
+}
+
+
+/* table{
+    width: 100%;
+} */
+table{
+    width: 100%;
+    font-size: 1.2rem;
+
+}
+
+th,td{
+    text-align: center;
 }
 
 

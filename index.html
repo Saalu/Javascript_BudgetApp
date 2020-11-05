@@ -12,50 +12,67 @@
    <div class="container">
         <!-- =================Form Section ==================== -->
     <section class="form-section">
-       <div class="one">
-        <form action="#" id="budget-form">
+       <!-- First Form -->
+       <div class="form-one">
+       <form action="#" id="budget-form">
                 <label for="budget">Please Enter Your Budget</label>
             <input type="text" id="budget">
-            <input type="submit" name="" value="Calculate" id="btn" class="btn">
+            <input type="submit" name="" value="Enter" id="btn" class="btn">
         </form>
-       </div>
-       <div class="two">
-        <form action="#" id="expense-form">
-            <label for="budget">Please Enter Your Expense</label>
-            <input type="text" id="expense-name">
-            <label for="budget">Please Enter Expense Amount</label>
-            <input type="text" id="amount">
-            <input type="submit" name="" value="Calculate" id="btn" class="btn">
-        </form>
-       </div>
+
+        <!-- Results  -->
+         <table class="budget-feedback feedback-one">
+                    <tr >
+                        <th>BUDGET</th>
+                        <th>EXPENSES</th>
+                        <th>BALANCE</th>
+                    </tr>
+                    <tr>
+                        <td>icon</td>
+                        <td>icon</td>
+                        <td>icon</td>
+                    </tr>
+                    <tr>
+                        <td class="budget">$ 0</td>
+                        <td class="expenses">$ 0</td>
+                        <td class="balance">$ 0</td>
+                    </tr>  
+        </table>
+            
+        </div> <!-- End First Form -->
+
+       <!-- Second Form -->
+       <div class="form-two">
+            <form action="#" id="expense-form">
+                <label for="budget">Please Enter Your Expense</label>
+                <input type="text" id="expense-name">
+                <label for="budget">Please Enter Expense Amount</label>
+                <input type="text" id="amount">
+                <input type="submit" name="" value="Calculate" id="btn" class="btn">
+            </form>
+             <!-- table result FEEDBACK -->
+            <table  class="expense-feedback feedback-two">
+                <tr>
+                    <th>Title</th>
+                    <th>Value</th>
+                    <th>....</th>
+                    <th>....</th>
+                </tr>
+                <tr>
+                    <td>Fix Car</td>
+                    <td>1000</td>
+                    <td> Edit </td>
+                    <td> Delete</td>
+                </tr>   
+            </table>  <!-- feedback end -->
+
+         </div ><!-- Second Form -->
+        
+
     </section>
 
 
     <!-- =================Display Results==================== -->
-    <section class="result">
-        <div class="one list">
-            <div class="list">
-                <h3>BUDGET</h3>
-                <li>icon</li>
-                <p class="budget">$ 0</p>
-            </div>
-            <div class="list">
-                <h3>EXPENSES</h3>
-                <li>icon</li>
-                <p class="expenses">$ 0</p>
-            </div>
-            <div class="list">
-                <h3>BALANCE</h3>
-                <li>icon</li>
-                <p class="balance">$ 0</p>
-            </div>
-        </div>
-        <div class="two">
-            <h2>Expense Title Expense Value</h2>
-        </div>
-    </section>
-
-
 
 
 
@@ -63,13 +80,8 @@
     <!-- end of container -->
    </div>
 
-
-
     <!-- ===================================== -->
     <!-- ===================================== -->
-
-
-
 
     <script src="app.js"></script>
 </body>
